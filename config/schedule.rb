@@ -22,9 +22,11 @@
 def default
 	adjusted = Datetime.now().advance(:hours => -24)
   	if @user.created_at <= adjusted
-	  	when time = @user.time
-	  		return "Welcome to Storytime! Here's your fist story. \nOnce upon a time, there was an ugly barnacle. He was so ugly that everyone died. The end."
-	  	end
+	  	every 1.day, :at => @user.time do
+  			#send default story
+  			#Story.first = default story
+  			#Story.first.activities = default activities
+		end
   	end
 end
 
