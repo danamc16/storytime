@@ -18,6 +18,7 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
+require 'whenever'
 
 class Functions
 	def default
