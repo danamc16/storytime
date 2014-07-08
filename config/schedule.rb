@@ -39,6 +39,7 @@ class Functions
 
 	end
 
+
 	def normal
 		if Story.find_by((@user.story.id) + 1).title == @user.story.title
 			puts 'Here\'s your next chapter.'
