@@ -32,6 +32,23 @@ def change_story
 end
 
 def normal
+	account_sid = "zyoung14@gmail.com"
+	auth_token = "cincinnati"
+	client = Twilio::REST::Client.new account_sid, auth_token
+
+	from ="+5132582662" #the twilio number
+
+	Users.all do |person|
+		client.account.messages.create(
+
+		:from => from,
+		:to => person.select(:phone_number)
+		:body => Story.find(person.select(:story_id))
+		# need to include activities in body
+		# send multiple messages? one for story, one for activty
+)
+	end
+
 end
 
 every 1.day do
