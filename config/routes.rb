@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions, only: [:new]
   root  'users#new'
-  match '/getstarted',  to: 'static_pages#users',            via: 'get'
 
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

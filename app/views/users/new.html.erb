@@ -1,16 +1,28 @@
 <center>
-<h1>StoryTime</h1>
-<h2>Bedtime stories by text</h2>
+	<div class="splash-container">
+		<div class="splash">
+			<div class="splash-head">
+				<h1>StoryTime</h1>
+				<h2>Bedtime stories by text.</h2>
+			</div>
+				<div class="row">
+				    <%= form_for(@user, class: "pure-form") do |f| %>
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@user) do |f| %>
+				      <%= f.text_field :phone_number, :placeholder => "Cell Phone Number", class: "phone" %>
 
-      <%= f.text_field :phone_number, :placeholder => "Cell Phone Number" %>
+				      <%= f.submit "Start Your Story", class: "pure-button" %>
+				    <% end %>
+			
+				</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-head is-center">More about StoryTime</div>
+		<div class="content-body is-center">
+		StoryTime sends parents nightly text messages of bedtime stories and related activities for face-to-face fun and learning. Share a better just-before-bedtime.
+		</div>
 
-      <%= f.submit "Start Your Story", class: "btn btn-large btn-primary" %>
-    <% end %>
-  </div>
-</div>
+	</div>
 </center>
+
 

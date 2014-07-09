@@ -1,10 +1,15 @@
 <center>
-<h1>The story begins...</h1>
-You will receive your first story at <%= @user.time %>. Included are a story and activity for your child's age group.
-<br>
-<br>
-Happy Reading!
-<br>
-<br>
-<%= link_to "Return to Home Page", root_path %>
+<div class="splash-edit">
+	<h1>The story begins...</h1>
+	<h3>You will receive your first story at <%= @user.time %>. Included are a story and activity for your child's age group.
+	<br>
+	<br>
+	Happy Reading!
+	<br>
+	</h3>
+	<form method="get" action="/">
+    	<input class="pure-button" type="submit" value="Return to Home">
+	</form>
+
+</div>
 </center>

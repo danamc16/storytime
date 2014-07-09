@@ -1,24 +1,29 @@
 <center>
-<h1>Thanks for signing up! We just need a bit more information about you.</h1>
-
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@user) do |f| %>
-
-      <%= f.label :birthday, 'Child\'s Birthday' %>
-      <%= f.date_field :birthday %>
-
-      <br>
-
-      <%= f.label :time, 'Time of Text Arrival' %>
-      <%= f.select :time, [['Half an hour before bed is best!', nil], '6:00 PM', '6:15 PM','6:30 PM', '6:45 PM', '7:00 PM', '7:15 PM','7:30 PM', '7:45 PM', '8:00 PM', '8:15 PM','8:30 PM', '8:45 PM', '9:00 PM' ] %>
+<div class="splash-edit">
+	<h1>Thanks for signing up!</h1>
+	<h2>We just need a bit more information about you.</h2>
 
 
-      <br>
+	<div class="row">
+	  <div class="span6 offset3">
+	    <%= form_for(@user) do |f| %>
 
-      <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
-    <% end %>
+	    <div class="field">
+	      <%= f.label :birthday, 'Child\'s Birthday', class: "label" %>
+	      <%= f.date_field :birthday %>
+	      </div>
 
-    </div>
-</div
+	      <br>
+	     <div class="field">
+	      <%= f.label :time, 'Time of Text Arrival', class: "label" %>
+	      <%= f.select :time, [['Half an hour before bed is best!', nil], '6:00 PM', '6:15 PM','6:30 PM', '6:45 PM', '7:00 PM', '7:15 PM','7:30 PM', '7:45 PM', '8:00 PM', '8:15 PM','8:30 PM', '8:45 PM', '9:00 PM' ] %>
+	      </div>
+	      <br>
+
+	      <%= f.submit "Finish Profile", class: "pure-button" %>
+	    <% end %>
+
+	    </div>
+	</div>
+</div>
 </center>
