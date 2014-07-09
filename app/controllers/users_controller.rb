@@ -22,8 +22,8 @@ class UsersController < ApplicationController
 	    @user = User.find(params[:id])
 	    if @user.update_attributes(user_params)
 	      flash[:success] = "Profile updated"
-	      default = Story.where(chapter: '1').order("RANDOM()").first.id
-	      @user.update_attributes(:story_id => default)
+	      #default = Story.where(chapter: '1').order("RANDOM()").first.id
+	      #@user.update_attributes(:story_id => default)
 	      render 'thankyou'
 	    else
 	      render 'edit'

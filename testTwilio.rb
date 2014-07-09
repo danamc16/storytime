@@ -3,7 +3,7 @@
 def normal
 	account_sid = "AC6bb55ecdf61f02c7692ab0e2b1883bca"
 	auth_token = "02320eafb5cc10b0a95d187407a1ca11"
-	@client = Twilio::REST::Client.new account_sid, auth_token
+	@client = Twolio::REST::Client.new account_sid, auth_token
 
 	from ="+15132582662" #the twilio number
 
@@ -12,9 +12,9 @@ def normal
 	age_group = 1
 
 
-	#friends.all.each do |friend|
+	friends.all.each do |friend|
 
-#if user.id == 3
+	#if user.id == 3
 	
 
 		#if user.age <= 1
@@ -40,7 +40,6 @@ def normal
 		# send multiple messages? one for story, one for activty#
 	)
 		#puts friend.phone_number
+	end
 end
-
-#end
 
