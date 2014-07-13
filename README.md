@@ -21,4 +21,5 @@ The front page design is also intended to be clean and easy to read and use.
 ##Contact Us
 
 dana.chaykovsky@yale.edu
+
 phil.esterman@yale.edu
