@@ -40,6 +40,11 @@ h3 {
 	line-height:1em;
 }
 
+p {
+    font-size:20px;
+    color:white;
+}
+
 .pure-button {
     background-color: #1f8dd6;
     color: white;
@@ -52,6 +57,59 @@ h3 {
     width:20%;
 	height:20%;
 	font-size:150%;
+}
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+
+.home-menu.pure-menu-open {
+    background: #2d3e50;
+}
+
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    border-bottom: none;
+    z-index: 4;
+}
+
+.pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.home-menu a {
+    color: #6FBEF3;
+}
+
+.home-menu ul {
+    float: right;
+}
+
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+.pure-menu.pure-menu-horizontal>.pure-menu-heading {
+    display: inline-block;
+    zoom: 1;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.pure-menu-horizontal li {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+#nav a {
+    transition: all 0.5s ease;
 }
 
 .splash-container {
@@ -140,4 +198,24 @@ h3 {
 
 #user_phone_number[type="tel"] {
 	width:22%;
+}
+
+.l-box {
+    padding: 2em;
+}
+
+.content-subhead {
+    color: white;
+    font-size: 150%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+}
+    .content-subhead i {
+        margin-right: 7px;
+    }
+
+.pure-g {
+    background:green;
+    background: #2d3e50;
 }
